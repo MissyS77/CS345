@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carbon Easy! (CE)</title>
+    <link rel="icon" href="logo.png"/>
+    <link href = "index.css" rel = "stylesheet" type = "text/css" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="navbar custom-background-colour">
+        <img src="logo.png" width="100px" height="100px" alt="This is the logo of our website."/>
+        <a href="#" class="custom-hover-colour">Home</a>
+        <a href="#" class="custom-hover-colour">About</a>
+        <a href="#" class="custom-hover-colour">Services</a>
+        <a href="#" class="custom-hover-colour">Contact</a>
+        <a href="#" class="custom-hover-colour">Donate</a>
+        <div class="language">
+            <span>Language</span>
+            <div class="language-content">
+              <a href="#">English</a>
+              <a href="#">Chinese</a>
+              <a href="#">Spanish</a>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button class="search-button">Search</button>
+            <a href="#" class="sign-in custom-hover-colour">Sign in</a>
+            <a href="#" onclick="show_form()" id="trigger-modal" class="regist custom-hover-colour">Register</a>
+        </div>
+    </div>
+
+    <div class="backgroud">
+    </div>
+
+    <div class="heading">
+        <h1>Welcome to Carbon Easy! (CE)</h1>
+        <p>Let's start calculating your carbon footprint!</p>
+        <button class="start-button custom-hover-white">START!</button>
+    </div>
+
+    <div class="introductory custom-background-colour">
+        <h2>Here is the introductory information about CE</h2>
+    </div>
+
+    <div class="content">
+        <table>
+            <tr>
+                <th> </th>
+                <th> </th>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="custom-colour custom-hover-colour">News</h3>
+                    <p>Here is the latest environmental related news...</p>
+                </td>
+                <td>
+                    <h3 class="custom-colour custom-hover-colour">Events</h3>
+                    <p>Here are the upcoming events related to environmental protection...</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3 class="custom-colour custom-hover-colour">Join us</h3>
+                    <p>Here is the contact information for the community...</p>
+                </td>
+                <td>
+                    <h3 class="custom-colour custom-hover-colour">Donate</h3>
+                    <p>Donations can be made here...</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="form-ct" class="registration-page">
+        <div class="form-ct">
+            <button onclick="close_form()" id="close-button" class="close-button">X</button>
+            <form id="registration-form" class="registration-form">
+                <h2>CE Member Registration</h2>
+                <div id="userInfo" class="form-section">
+                    <h3>User Details</h3>
+                    <div class="name">
+                        <div>
+                        <p>Given Name</p>
+                        <input type="text" id="givenName" name="givenName" required>
+                    </div>
+                    <div>
+                        <p>Surname</p>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+                    </div>
+                    
+                    <p>Username</p>
+                    <input type="text" id="username" name="username" required>
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                  
+                <div id="addressInfo" class="form-section">
+                    <h3>Addresses</h3>
+                    <p>Home Address</p>
+                    <input type="text" id="homeAddress" name="homeAddress" required>
+                    <p>Work Address</p>
+                    <input type="text" id="workAddress" name="workAddress" required>
+                </div>
+                  
+                <div id="contactInfo" class="form-section">
+                    <h3>Contacts</h3>
+                    <p>Mobile Number</p>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                    <p>Email</p>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <button type="submit" class="register-button">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
